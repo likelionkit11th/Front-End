@@ -1,0 +1,2 @@
+hello! nice! my name is gaeun~~!
+git checkout -b LGE0 -> branch 만들고 바로 그 branch로 이동
