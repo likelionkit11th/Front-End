@@ -3,6 +3,7 @@
     --orange : #FFA500;
     --light-orange : #faebd7;
     --middle-orange : #ffdaa9;
+    --middle-up-orange : #fbcb85;
 
 }
 
@@ -18,9 +19,14 @@ body{
     margin: 0 auto; 
 }
 
-    /**
-    * Header
-    */
+img{
+    width: 100%;
+}
+
+/*
+* === START HEADER ===
+* Header
+*/
 .header{
     width: 100%;
     display: flex;
@@ -87,7 +93,15 @@ body{
     font-size: 17rem;
     cursor: pointer;
 }
+/*
+* === END HEADER ===
+*/
 
+
+/*
+* === START NAVBAR ===
+* Navbar
+*/
 .navbar {
     display: flex;
     width: 100%;
@@ -110,15 +124,26 @@ body{
     color: #000;
 }
 
-.container {
-    width: 100%;
-    padding: 20px 8%;
-    margin: 0;
+/*
+* === END NAVBAR ===
+*/
 
+
+.container {
+    margin: 0 auto;
+    width: 84%;
+    min-width: 800px;
+
+    
+    padding: 20px;
     display: flex;
     flex-direction: row;
 }
 
+/*
+* === START SIDEBAR LEFT ===
+* Sidebar Left, main
+*/
 .main{
     width: 68%;
     height: 100%;
@@ -126,16 +151,7 @@ body{
     margin: 0 1%;
 }
 
-.sidebar-right{
-    width: 28%;
-    height: 100%;
-    margin: 0 1%;
-    background-color: rgb(172, 91, 91);
-}
 
-img{
-    width: 100%;
-}
 
 .submenu-title{
     background-color: var(--orange);
@@ -197,4 +213,111 @@ img{
     padding: 10px 10px;
     font-size: 15rem;
     font-weight: 800;
+}
+/*
+* === END SIDEBAR LEFT ===
+*/
+
+
+/*
+* === START SIDEBAR RIGHT ===
+* Sidebar Right, login
+*/
+.sidebar-right{
+    width: 28%;
+    height: 100%;
+    margin: 0 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-right .btn{
+    color: #fff;
+    background-color: var(--orange);
+    font-size: 17rem;
+    font-weight: 800;
+    cursor: pointer;
+    border: 0px;
+}
+.sidebar-right .btn:hover{
+    background-color: var(--middle-up-orange)
+}
+
+
+.login{
+    width: 100%;
+}
+
+.login .sign-in{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.login .input{
+    width: 70%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-right: 4%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-orange);
+}
+
+.login .input div span{
+    display: inline-block;
+    width: 12%;
+    font-size: 15rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.login .input input{
+    width: 85%;
+    padding: 10px 5px;
+    margin: 10px 0 10px 3%;
+    border: 1px solid #ccc;
+}
+
+.login .sign-in .button{
+    width: 28%;
+}
+.login .sign-in .button .btn{
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    
+}
+
+.login .sign-up{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.login .sign-up .btn{
+    width: 100%;
+    height: 40px;
+}
+
+.sbc-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0;
+}
+
+.logo-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo-list .logo-item {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    margin: 40px 0;
 }
