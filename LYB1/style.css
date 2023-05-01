@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 70%;
+    margin: 0 auto; 
+}
+
+    /**
+    * Header
+    */
+.header{
+    width: 100%;
+    display: flex;
+    padding: 10px 20px;
+}
+/*
+    logo
+*/
+.header .logo{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header .logo img{
+    width: 50%;
+}
+
+/*
+    menus
+*/
+.header .menus{
+    width: 80%;
+}
+
+.header .menus .menu{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header .menus .menu p{
+    margin: 0 10px;
+    padding: 0 3px;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+.header .menus .menu p:hover{
+    font-weight: bold;
+}
+
+.header .search {
+    display: flex;
+    align-items: center;
+
+    padding: 10px 50px;
+}
+
+.header .search .search-input{
+    width: 60%;
+    margin-left: 5%;
+}
+.header .search .search-input input{
+    padding: 8px 5px;
+    width: 100%;
+    border: 5px solid orange;
+}
+.header .search .search-btn button{
+    background-color: orange;
+    padding: 9.5px 12px;
+    border: 0px;
+    margin-left: 22px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    padding: 3px 8%;
+
+    border-top: 5px double orange;
+    border-bottom: 5px double orange;
+}
+
+.navbar p{
+    padding: 0 5px;
+    margin: 10px 0;
+    font-size: 17px;
+    cursor: pointer;
+    color: rgb(118, 118, 118);
+}
+
+.navbar p:hover{
+    font-weight: bold;
+    color: #000;
+}
+
