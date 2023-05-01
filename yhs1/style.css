@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    margin-top: 2%;
+}
+
+.header-img {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.header-img img {
+    width: 50%;
+}
+
+.search-and-menu {
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu p {
+    margin-top: 0;
+    margin-left: 1rem;
+    border-bottom: 1px solid currentColor;
+    color: gray;
+}
+
+.search {
+    display: flex;
+}
+
+.search-bar {
+    width: 50%;
+    margin-left: 5%;
+}
+
+.search-bar input {
+    width: 98%;
+    height: 100%;
+    padding: 0.75rem;
+    border: 5px solid orange;
+}
+
+.search-button button {
+    height: 100%;
+    padding: 0.75rem;
+    background-color: rgb(253, 181, 103);
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.search-button button:active {
+    background-color: orangered;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    border-top: 5px double orange;
+    border-bottom: 5px double orange;
+    margin-top: 2.5%;
+}
+
+.navbar p {
+    margin: 0.5rem 2.5%;
+    color: gray;
+    font-size: 1.25rem;
+    font-weight: bold;
+    transition: scale 100ms;
+}
+
+.navbar p:hover {
+    color: black;
+    scale: 1.1;
+}
+
+.contents {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 2.5%;
+}
+
+.contents > .column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contents > .column.left {
+    width: 65%;
+}
+
+.contents > .column.right {
+    width: 35%;
+}
+
+.contents img {
+    width: 100%;
+}
+
+.contents .box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contents .box .box-title {
+    padding: 0.5rem;
+    background-color:rgb(253, 181, 103);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.bootcamps-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.bootcamps-list .list {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.bootcamps-list .list span {
+    flex-basis: 33.3%;
+    flex-grow: 1;
+    padding: 1rem;
+    background-color: lightgoldenrodyellow;
+    font-weight: bold;
+    text-align: center;
+}
+
+.kit-tracks-container {
+    display: flex;
+}
+
+.kit-tracks-container .item {
+    flex-basis: 33.3%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+}
+
+.kit-tracks-container .item:not(:last-child) {
+    border-right: 2px solid gainsboro;
+}
+
+.login-and-signup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.login {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.login .input-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 0.5rem;
+    padding: 1rem;
+    background-color: moccasin;
+}
+
+.login .input-container input {
+    width: 100%;
+    border: none;
+}
+
+.login .input-container label {
+    font-weight: bold;
+    text-align: center;
+}
+
+.login-and-signup button {
+    flex-grow: 1;
+    padding: 0.5rem;
+    background-color: orange;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.login-and-signup button:active {
+    background-color: orangered;
+}
+
+.signup-button {
+    width: 100%;
+}
+
+.logos-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.logos-list .list {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.logos-list .list img {
+    width: 45%;
+}
