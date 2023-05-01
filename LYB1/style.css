@@ -160,6 +160,49 @@ img{
     font-size: 16rem;
 }
 
+
+@keyframes slide {
+    20% {
+        margin-left: 0px;
+    }
+
+    40% {
+        margin-left: calc(-100% * 1);
+    }
+
+    60% {
+        margin-left: calc(-100% * 2);
+    }
+
+    80% {
+        margin-left: calc(-100% * 3);
+    }
+}
+
+.banner-slide-wrapper{
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner-slide{
+    width: 300%;
+    -webkit-animation-name: slide;
+    -webkit-animation-duration: 12s;
+    -webkit-animation-iteration-count: infinite;
+    /* -webkit-animation-direction: alternate; */
+    -webkit-animation-play-state: running;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.banner-img-wrapper{
+    width: 100%;
+}
+
+
+
 .bootcamp-list{
     width: 100%;
     display: flex;
