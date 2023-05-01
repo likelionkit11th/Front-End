@@ -1,9 +1,20 @@
+:root{
+    font-size: 1px;
+    --orange : #FFA500;
+    --light-orange : #faebd7;
+    --middle-orange : #ffdaa9;
+
+}
+
 *{
     box-sizing: border-box;
+    
 }
 
 body{
-    width: 70%;
+    max-width: 1200px;
+    width: 95%;
+    min-width: 768px;
     margin: 0 auto; 
 }
 
@@ -39,6 +50,7 @@ body{
 .header .menus .menu{
     display: flex;
     justify-content: flex-end;
+    font-size: 15rem;
 }
 
 .header .menus .menu p{
@@ -65,14 +77,14 @@ body{
 .header .search .search-input input{
     padding: 8px 5px;
     width: 100%;
-    border: 5px solid orange;
+    border: 5px solid var(--orange);
 }
 .header .search .search-btn button{
-    background-color: orange;
+    background-color: var(--orange);
     padding: 9.5px 12px;
     border: 0px;
     margin-left: 22px;
-    font-size: 17px;
+    font-size: 17rem;
     cursor: pointer;
 }
 
@@ -81,14 +93,14 @@ body{
     width: 100%;
     padding: 3px 8%;
 
-    border-top: 5px double orange;
-    border-bottom: 5px double orange;
+    border-top: 5px double var(--orange);
+    border-bottom: 5px double var(--orange);
 }
 
 .navbar p{
     padding: 0 5px;
     margin: 10px 0;
-    font-size: 17px;
+    font-size: 17rem;
     cursor: pointer;
     color: rgb(118, 118, 118);
 }
@@ -98,3 +110,91 @@ body{
     color: #000;
 }
 
+.container {
+    width: 100%;
+    padding: 20px 8%;
+    margin: 0;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.main{
+    width: 68%;
+    height: 100%;
+    background-color: #fff;
+    margin: 0 1%;
+}
+
+.sidebar-right{
+    width: 28%;
+    height: 100%;
+    margin: 0 1%;
+    background-color: rgb(172, 91, 91);
+}
+
+img{
+    width: 100%;
+}
+
+.submenu-title{
+    background-color: var(--orange);
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 16rem;
+}
+
+.bootcamp-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bootcamp-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19rem;
+    font-weight: 800;
+    width: 31.9%;
+    margin: 4px 0.7%;
+    height: 70px;
+
+    background-color: var(--light-orange);
+
+}
+
+.bootcamp-item:hover{
+    background-color: var(--middle-orange);
+}
+
+.track-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+}
+
+.track-item{
+    width: 31%;
+    box-shadow: 1px 3px 5px 0px #ccc;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 5px 30px 5px;
+}
+
+.track-img{
+    width: 100%;
+    padding: 40px 24%;
+}
+
+.track-description{
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 15rem;
+    font-weight: 800;
+}
