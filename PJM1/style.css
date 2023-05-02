@@ -1,0 +1,319 @@
+body {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .header {
+    display: flex;
+    margin-top: 3%;
+  }
+  .header-img {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .search-menu {
+    width: 80%;
+  }
+  .header-img img {
+    width: 50%;
+  }
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .menu p {
+    margin-left: 15px;
+    border-bottom: 1px solid black;
+    font-size: 15px;
+  }
+
+  .menu p:hover {
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .search {
+    display: flex;
+  }
+
+  .searchbar {
+    width: 50%;
+    margin-left: 5%;
+    margin-right: 5px;
+  }
+  .searchbar input {
+    width: 95%;
+    padding: 10px;
+    border: 5px solid orange;
+  }
+
+  .searchbtn button {
+    padding: 10px;
+    background-color: orange;
+    border : 0;
+    outline: 0;
+  }
+
+  .searchbtn img {
+    height: 20px;
+    width: 50px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    border-top: 6px double orange;
+    border-bottom: 6px double orange;
+    margin-top: 1%;
+  }
+  .navbar p {
+    margin-right: 5%;
+    font-size: 20px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  .navbar p:hover {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+
+  .body {
+    margin-top: 2%;
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .context1 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+  }
+
+  .context1 img {
+    width: 100%;
+  }
+  
+  .BCamp {
+    display: block;
+  }
+  
+  .Title {
+    background-color: orange;
+    display: flex;
+    height: 30px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+
+  .Title p {
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 10px ;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .row button {
+    background-color: wheat;
+    width: 32%;
+    height:60px;
+    font-size: 20px;
+    margin-top: 4px ;
+    margin-left: 2px ;
+    margin-bottom: 4px ;
+    margin-right: 2px ;
+    line-height: 50px;
+    text-align: center;
+    border : 0;
+    outline: 0;
+  }
+
+  .b1 {
+    color:blue;
+    font-weight: bold;
+  }
+
+  .b2 {
+    color:red;
+    font-weight: bold;
+  }
+
+  .b3 {
+    color:green;
+    font-weight: bold;
+  }
+
+  .b4 {
+    color:purple;
+    font-weight: bold;
+  }
+
+  .b5 {
+    color:brown;
+    font-weight: bold;
+  }
+
+  .b6 {
+    color:rgba(165, 42, 42, 0.342);
+    font-weight: bold;
+  }
+
+  .b7 {
+    color:greenyellow;
+    font-weight: bold;
+  }
+
+  .b8 {
+    color:rgba(0, 128, 0, 0.285);
+    font-weight: bold;
+  }
+
+  .b9 {
+    font-weight: bold;
+  } 
+
+  .row button:hover {
+    background-color: rgb(245, 201, 119);
+  }
+
+  .Track {
+    display: block;
+  }
+
+  .bimg {
+    display:flex;
+  }
+  
+  .trackimg {
+    display:flex;
+    flex-direction: column;
+    width: 40%;
+    height: 330px;
+    align-items: center;
+    box-shadow: 3px 3px rgb(190, 190, 190)  ;
+    margin-bottom:50px;
+    margin-right: 5px;
+  }
+
+  .trackimg img {
+    width: 70%;
+    height: 120px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .trackimg p {
+    margin-left: 10px ;
+    margin-bottom: 50px ;
+    margin-right: 10px ;
+    font-weight: bold;
+  }
+
+  .Login{
+    display: flex;
+  }
+
+  .IDPW {
+    display: block;
+    width: 70%;
+    height: 100px;
+    background-color: wheat;
+  }
+
+  .ID {
+    display: flex;
+    height: 50px;
+    margin-left: 10px;
+  }
+  
+  .ID p{
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 10px;
+    line-height: 0.8;
+  }
+
+  .ID input{
+    margin-left: 10px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border : 0;
+    outline: 0;
+  }
+
+  .PassWord  {
+    display: flex;
+    height: 50px;
+    margin-left: 10px;
+  }
+
+  .PassWord p{
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 5px;
+    line-height: 0.8;
+  }
+
+  .PassWord input {
+    margin-left: 3px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border : 0;
+    outline: 0;
+  }
+
+
+  .Btnlogin button{
+    background-color: orange;
+    font-size: 20px;
+    color:white;
+    border : 0;
+    outline: 0;
+    width: 140%;
+    height: 100px;
+    margin-left: 10px;
+  }
+
+  .Btnlogin button:hover {
+    background-color:rgb(253, 200, 103);
+  }
+
+  .Sign button{
+    background-color: orange;
+    width: 360px;
+    height: 40px;
+    margin-top: 10px ;
+    margin-bottom: 20px ;
+    text-align: center;
+    border : 0;
+    outline: 0;
+    font-size: 20px;
+    color:white;
+    font-weight: bold;
+  }
+
+  .Sign button:hover {
+    background-color:rgb(253, 200, 103);
+  }
+
+  .SBC img {
+    width:200px;
+    height:200px;
+    display: block;
+    margin: 70px auto;
+  }
+
+  .Logo img {
+    width:130px;
+    height:130px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
