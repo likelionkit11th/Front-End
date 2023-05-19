@@ -16,6 +16,7 @@ cd Memo/
 
 실행
 ```
+npm i
 npm start
 ```
 
