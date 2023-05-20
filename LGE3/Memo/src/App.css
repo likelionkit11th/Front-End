@@ -1,0 +1,94 @@
+.App {
+  text-align: center;
+}
+
+/* editor */
+
+.MemoEdit {
+  border: 1px solid gray;
+  text-align: center;
+  padding: 20px;
+  background-color: #FFEBEE;
+}
+
+.MemoEdit input,
+textarea {
+  margin-bottom: 20px;
+  width: 500px;
+}
+
+.MemoEdit input {
+  padding: 10px;
+}
+.MemoEdit textarea {
+  padding: 10px;
+  height: 150px;
+}
+
+.MemoEdit select {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.APP {
+  background-color: #FFCDD2;
+}
+
+.MemoEdit button {
+  width: 500px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.MemoEdit button:hover {
+  background-color: #E0E0E0;
+}
+
+.ListItem {
+  padding: 10px;
+  background-color: #FFCDD2;
+  display: flex;
+}
+
+.ListItem div{
+  margin-right: 50px;
+  background-color: #FFCDD2;
+  display: flex;
+}
+
+.dark {
+  background-color: #37474F;
+  color: #ECEFF1;
+}
+
+.dark div{
+  background-color: #546E7A;
+  color: #ECEFF1;
+}
+
+.dark div.App{
+  background-color: #37474F;
+  color: #ECEFF1;
+}
+
+.dark div.APP{
+  background-color: #37474F;
+  color: #ECEFF1;
+}
+
+.dark div.ListItem{
+  background-color: #37474F;
+  color: #ECEFF1;
+}
+
+.dark div.ListItem div{
+  background-color: #37474F;
+  color: #ECEFF1;
+}
+
+.light {
+  background-color: #FFCDD2;
+  color: #400f0f;
+}
