@@ -1,0 +1,78 @@
+.App {
+  text-align: center;
+}
+
+/* editor */
+
+.MemoEdit {
+  border: 1px solid gray;
+  text-align: center;
+  padding: 20px;
+}
+
+.MemoEdit input,
+textarea {
+  margin-bottom: 20px;
+  width: 500px;
+}
+
+.MemoEdit input {
+  padding: 10px;
+}
+.MemoEdit textarea {
+  padding: 10px;
+  height: 150px;
+}
+
+.MemoEdit select {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.MemoEdit button {
+  width: 500px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.countMemo {
+  text-align: center;
+}
+
+.memo {
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.title {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  border-top: 3px solid rgb(229, 153, 229);
+  border-radius: 100vh;
+}
+
+.content {
+  text-align: left;
+  font-size: 15px;
+}
+
+.member {
+  text-align: right;
+  font-size: 12px;
+  border-bottom: 3px solid rgb(229, 153, 229);
+  border-radius: 100vh;
+}
+
+.dark{
+  background-color: #202124;
+  color: white;
+}
+
+.light{
+  background-color: #fefefe;
+  color: #202124,
+}
