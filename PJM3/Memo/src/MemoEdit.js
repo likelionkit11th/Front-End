@@ -28,7 +28,6 @@ const handleSubmit = (e) => {
     content:"",
     member:"",
   })
-
 }
   
   return (
