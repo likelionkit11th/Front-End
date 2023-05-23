@@ -1,13 +1,15 @@
 import React from "react";
 import ListItem from "./ListItem";
 
+import "./style/List.css"
+
 const MemoList = ({ list }) => {
 
     return (
-        <div>
+        <div className="list-wrapper">
             <h2>리스트</h2>
             <h4>{list.length}개의 메모가 저장되었습니다.</h4>
-            {list.map(item => <ListItem item={item} />)}
+            <div className="memo-items">{list.map(item => <ListItem item={item} />)}</div>
         </div>
     )
 }

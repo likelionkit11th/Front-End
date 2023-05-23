@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./style/ListItem.css"
+import "./style/List.css"
 import { useEffect } from "react";
 
 const ListItem = ({ item }) => {

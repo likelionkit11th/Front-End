@@ -40,8 +40,8 @@ const MemoEdit = ({onCreate}) => {
             <div>
                 <textarea placeholder='내용작성' name='content' value={state.content} onChange={handleState}/>
             </div>
-            <div>
-                <span>운영진 : </span>
+            <div className="select-member">
+                <div>운영진 : </div>
                 <select name="member" value={state.member} onChange={handleState}>
                     <option value={0}>---</option>
                     <option value={"안재현"}>안재현</option>
@@ -52,7 +52,7 @@ const MemoEdit = ({onCreate}) => {
                 </select>
             </div>
             <div>
-                <button onClick={handleSubmit}>저장하기</button>
+                <button className='primary-btn' onClick={handleSubmit}>저장하기</button>
             </div>
         </div>
     );

@@ -7,7 +7,7 @@
     padding: 10px 20px;
 }
 .memo-item:hover{
-    background-color: #f5f5f5;
+    background-color: #f5f1ec;
 }
 
 .memo-header{
@@ -29,4 +29,14 @@
 
 .memo-item .memo-content{
     text-align: left;
+}
+
+.list-wrapper{
+    height: 100vh;
+    padding: 50px 30px;
+}
+
+.memo-items{
+    height: 70vh;
+    overflow-y: scroll;
 }
