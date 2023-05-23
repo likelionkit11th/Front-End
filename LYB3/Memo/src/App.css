@@ -1,0 +1,81 @@
+*{
+  box-sizing: border-box;
+}
+
+.App {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 768px;
+}
+
+.darkmode{
+  background-color: var(--gray-color);
+  color: var(--white-color);
+}
+
+.darkmode h1,
+.darkmode h2,
+.darkmode h3,
+.darkmode h4,
+.darkmode h5,
+.darkmode h6{
+  color: var(--white-color);
+}
+
+/* editor */
+
+.MemoEdit {
+  /* border: 1px solid gray; */
+  text-align: center;
+  padding: 50px 0;
+  height: 100vh;
+}
+
+.MemoEdit input,
+textarea {
+  margin-bottom: 20px;
+  width: 70%;
+  border: 1px solid var(--secondary-color-light);
+  border-radius: 5px;
+}
+
+.MemoEdit input {
+  padding: 10px;
+}
+.MemoEdit textarea {
+  padding: 10px;
+  height: 150px;
+}
+
+.select-member{
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  margin: 20px auto;
+}
+
+.select-member > div{
+  display: flex;
+  width: 30%;
+  align-items: center;
+}
+
+.select-member select {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid var(--secondary-color-light);
+  border-radius: 5px;
+}
+
+.MemoEdit button {
+  width: 30%;
+  height: 40px;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-weight: bold;
+}
+
