@@ -1,0 +1,316 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 1080px;
+    margin: 1% auto 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header-img {
+    width: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-img img {
+    width: 108px;
+    height: 97px;
+}
+
+.search-menu {
+    width: 80%;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu p {
+  margin: 0 0 0 20px;
+  padding: 0 5px 0;
+  border-bottom: 1px solid black;
+  position: relative;
+  top: -16px;
+  left: -30px;
+}
+
+.menu p:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.searchbar {
+  width: 67%;
+}
+
+.searchbar input {
+  width: 99.5%;
+  height: 91%;
+  font-size: 25px;
+  padding: 5px;
+  border: 5px solid orange;
+}
+
+.searchbtn button {
+  font-size: 25px;
+  width: 48px;
+  height: 48px;
+  padding: 5px;
+  background-color: orange;
+  border: 2px solid orange;
+  cursor: pointer;
+}
+
+.navbar {
+  color: gray;
+  width: 1080px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  border-top: 7px double orange;
+  border-bottom: 7px double orange;
+  margin-top: 3%;
+}
+
+.navbar p {
+  margin: 0 5% 0 0;
+  font-size: 20px;
+}
+
+.navbar p:hover {
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  width: 980px;
+  margin: 0 auto;
+  margin-top: 1%;
+}
+
+.section {
+  width: 70%;
+  height: 1000px;
+}
+
+.section img {
+  width: 100%;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px;
+  padding-left: 10px;
+  background-color: orange;
+}
+
+.section-link {
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 8px;
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+  gap: 8px;
+}
+
+.section-button {
+  background-color: antiquewhite;
+  font-size: 21px;
+  font-weight: bold;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.section-button:first-child {
+  color: navy;
+}
+
+.section-button:nth-child(2) {
+  color: crimson;
+}
+
+.section-button:nth-child(3) {
+  color: forestgreen;
+}
+
+.section-button:nth-child(4) {
+  color: purple;
+}
+
+.section-button:nth-child(5) {
+  color: brown;
+}
+
+.section-button:nth-child(7) {
+  color: yellowgreen;
+}
+
+.section-button:nth-child(8) {
+  color: green;
+}
+
+.section-button:hover {
+  background-color: bisque;
+}
+
+.section2 {
+  height: 400px;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px;
+  padding-left: 10px;
+  background-color: orange;
+}
+
+.section-track {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.track {
+  width: 32%;
+  height: 88%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 3px 3px lightgray;
+}
+
+.track-img img {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.track p {
+  font-size: 16px;
+  font-weight: bold;
+  margin: auto 10px;
+}
+
+.aside {
+  width: 30%;
+  height: 1000px;
+}
+
+.login {
+  margin-left: 3%;
+  height: 16%;
+}
+
+.login form {
+  height: 65%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-content {
+  height: 100%;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.login-input {
+  display: flex;
+  justify-content: space-around;
+}
+
+.login label {
+  display: block;
+  font-weight: bold;
+  width: 10%;
+  padding: 8px 0;
+}
+
+.login input {
+  display: block;
+  width: 70%;
+  border: none;
+}
+
+.login button {
+  width: 28%;
+  background-color: orange;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.login > button {
+  width: 100%;
+  text-align: center;
+  background-color: orange;
+  color: white;
+  font-size: 28px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.login button:hover {
+  cursor: pointer;
+  background-color: rgb(250, 179, 46);
+}
+
+.side-image {
+  width: 100%;
+  height: 25%;
+}
+
+.side-image img {
+  display: block;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  margin-top: 15%;
+}
+
+.side-design {
+  width: 100%;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 5%;
+}
+
+.side-design p {
+  margin-left: 5px;
+}
+
+.design-image {
+  margin-top: 5%;
+  margin-left: 10px;
+  margin-bottom: 5%;
+}
+
+.design-image img {
+  width: 42%;
+}
