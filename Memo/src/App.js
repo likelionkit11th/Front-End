@@ -52,6 +52,14 @@ function App() {
         </Routes>
       </div>
     </BrowserRouter>
+import './App.css';
+import MemoEdit from './MemoEdit';
+
+function App() {
+  return (
+    <div className="App">
+      <MemoEdit/>
+    </div>
   );
 }
 
