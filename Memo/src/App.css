@@ -36,3 +36,46 @@ textarea {
   cursor: pointer;
 }
 
+.ListView {
+  border: 1px solid gray;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.ListView h2 {
+  text-align: center;
+}
+
+.Item {
+  background-color: rgb(240, 240, 240);
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.Item span {
+  margin-right: 10px;
+}
+
+.Item .info {
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.Item .content {
+  font-weight: bold;
+}
+
+.Item textarea {
+  padding: 10px;
+}
+
+.dark{
+  background-color: #202124;
+  color: white;
+}
+
+.light{
+  background-color: #fefefe;
+  color: #202124,
+}
