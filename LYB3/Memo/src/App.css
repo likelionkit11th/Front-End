@@ -8,6 +8,20 @@
   max-width: 768px;
 }
 
+.darkmode{
+  background-color: var(--gray-color);
+  color: var(--white-color);
+}
+
+.darkmode h1,
+.darkmode h2,
+.darkmode h3,
+.darkmode h4,
+.darkmode h5,
+.darkmode h6{
+  color: var(--white-color);
+}
+
 /* editor */
 
 .MemoEdit {
