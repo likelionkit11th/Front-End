@@ -1,47 +1,57 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 const MemoEdit = ({onCreate}) => {
+
+
   const [state, setState] = useState({
     title: "",
-    content: "",
+    content:"",
     member: "",
   });
-  const handleState = (e) => {
+
+  const handleState = (e) => {  
     setState({
       ...state,
-      [e.target.name]:e.target.value,
+      [e.target.name]: e.target.value,
     })
   }
-  const handleSub = (e) => {
-    console.log(state)
-    onCreate(state.title, state.content, state.member);
-    alert('저장성공');
-    setState({    
-      title: "",
-    content: "",
-    member: ""})
+
+  const handleSubmit = (e) => {
+    // console.log(state)
+    alert("저장 성공")
+    onCreate(state.title, state.content, state.member)
+    setState({
+      title:"",
+      content:"",
+      member:"",
+    })
+  }
+  const navigate = useNavigate()
+  const goHome = () => {
+    navigate(-1)
   }
 
   return (
     <div className="MemoEdit">
+      <button onClick={goHome}>뒤로가기</button>
     <h2>오늘의 강의 메모</h2>
     <div>
-      <input
-      className='Input' 
-      placeholder='제목'
-      name = 'title'
-      value={state.title}
-      onChange={handleState}
+      <input 
+        placeholder='제목'
+        name='title'
+        value={state.title}
+        onChange={handleState}
       />
     </div>
     <div>
-      <textarea
-      className='Textarea' 
-      placeholder='내용작성'
-      name ='content'
-      value={state.content}
-      onChange={handleState}
-      />
+      <textarea 
+        placeholder='내용작성'
+        name='content'
+        value={state.content}
+        onChange={handleState}
+        />
     </div>
     <div>
       <span>운영진 : </span>
@@ -55,7 +65,7 @@ const MemoEdit = ({onCreate}) => {
       </select>
     </div>
     <div>
-      <button onClick={handleSub}>저장하기</button>
+      <button onClick={handleSubmit}>저장하기</button>
     </div>
   </div>
   );

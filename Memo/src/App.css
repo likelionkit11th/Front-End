@@ -37,17 +37,7 @@ textarea {
 }
 
 .ListView {
-  border: 1px solid gray;
   padding: 20px;
-  margin-top: 20px;
-}
-
-.ListView_list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.ListView h2 {
   text-align: center;
 }
 
@@ -55,7 +45,6 @@ textarea {
   background-color: rgb(240, 240, 240);
   margin-bottom: 10px;
   padding: 20px;
-  border-radius: 10%;
 }
 
 .Item span {
@@ -63,7 +52,7 @@ textarea {
 }
 
 .Item .info {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid gray;
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
@@ -81,19 +70,9 @@ textarea {
   color: white;
 }
 
-.dark Input{
-  background-color: rgb(125, 182, 229);
-} 
-
-.dark Textarea{
-  background-color: rgb(125, 182, 229);
-} 
-
-.dark .ListView .Item {
-  background-color: rgb(125, 182, 229);
-}
-
 .light{
   background-color: #fefefe;
   color: #202124,
 }
+
+/* 추가 css */
