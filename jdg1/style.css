@@ -1,0 +1,226 @@
+body {
+    width: 70%;
+    margin: 0 auto;
+}
+
+p {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: bold;
+    font-size: 16px;
+}
+.header {
+    display: flex;
+    margin-top: 3%;
+}
+.header-img {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.search-menu {
+    width: 80%;
+}
+.header-img img {
+    width: 50%;
+}
+.menu {
+    display: flex;
+    justify-content: flex-end;
+}
+.menu p {
+    margin-left: 15px;
+    border-bottom: 1px solid black;
+    font-size: 15px;
+}
+.search {
+    display: flex;
+}
+.searchbar {
+    width: 50%;
+    margin-left: 5%;
+}
+.searchbar input {
+    width: 90%;
+    padding: 10px;
+    border: 5px solid orange;
+}
+.searchbtn button {
+    padding: 10px;
+    background-color: green;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    border-top: 5px double orange;
+    border-bottom: 5px double orange;
+    margin-top: 3%;
+}
+.navbar p {
+    margin-right: 5%;
+    font-size: 20px;
+    font-weight: lighter;
+}
+.navbar p:hover {
+    font-weight: bold;
+}
+
+.main {
+    display: flex;
+}
+
+.bar_1 {
+    background-color: orange;
+}
+
+.menu_1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 250px;
+}
+
+.meun_bt{
+    width: 32%;
+    border: none;
+    background-color: antiquewhite;
+    margin : 4px;
+}
+
+.위 {
+    color: navy;
+}
+.향 {
+    color: darkred;
+}
+.제 {
+    color: green;
+}
+.코 {
+    color: purple;
+}
+.패 {
+    color: brown;
+}
+.저 {
+    color: rgba(165, 42, 42, 0.427);
+}
+.일 {
+    color: rgb(101, 185, 17);
+}
+.우 {
+    color: darkgreen;
+}
+.스 {
+    color: black;
+}
+.bar_2 {
+    background-color: orange;
+}
+
+.log{
+    display: flex;
+    margin-top: 10px;
+}
+
+.log_input{
+    height: 100px;
+    background-color: antiquewhite;
+    margin-left: 15px;
+}
+
+.ID{
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+
+.IDID {
+    margin-right: 20px;
+}
+
+.id {
+    width: 70%;
+    border: none;
+}
+
+.PW{
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+.pw{
+    width: 70%;
+    border: none;
+}
+
+.log_button {
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+    background-color: orange;
+    color: white;
+    border: none;
+}
+
+.sign_up{
+    background-color: orange;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+.sign {
+    font-size: 20px;
+}
+
+.menu_2 {
+    display: flex;
+    height: 800%;
+    justify-content: space-around;
+}
+.design {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    box-shadow: 3px 3px 0px lightgrey;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.menu_2 img {
+    width: 130PX;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.SBC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_SBC{
+    width: 70%;
+}
+
+.bar_3 {
+    background-color: orange;
+}
+
+.hubo_img_1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
+
+.img_h {
+    width: 50%;
+}
