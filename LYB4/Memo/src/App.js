@@ -18,9 +18,17 @@ function App() {
   }
 
   const onEdit = (title, content, member, id) => {
-    let oldData = data;
+    let oldData = [...data];
     const newItem = { id: id, title: title, content: content, member: member };
     for (var i = 0; i < oldData.length; i++) if (oldData[i].id == id) oldData[i] = newItem;
+    setData(oldData);
+    localStorage.setItem("MemoList", JSON.stringify(oldData));
+  }
+
+  const onDelete = (id) => {
+    if (!window.confirm("정말로 삭제하시겠습니까?")) return;
+    let oldData = [...data];
+    for (var i = 0; i < oldData.length; i++) if (oldData[i].id == id) oldData.splice(i, 1);
     setData(oldData);
     localStorage.setItem("MemoList", JSON.stringify(oldData));
   }
@@ -46,7 +54,7 @@ function App() {
         <Routes>
           <Route path="/create" element={<MemoEdit onCreate={onCreate} />} />
           <Route path="/edit/:id" element={<MemoEdit onCreate={onEdit} />} />
-          <Route path="/" element={<MemoList list={data} />} >
+          <Route path="/" element={<MemoList list={data} onDelete={onDelete} />} >
             <Route path="apilist" element={<ApiList />} />
             <Route path="apilist/:id" element={<ApiList />} />
           </Route>
