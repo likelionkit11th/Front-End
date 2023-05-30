@@ -40,3 +40,49 @@
     height: 70vh;
     overflow-y: scroll;
 }
+
+.list-btn-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.list-btn-wrapper > button{
+    
+}
+
+.list-btn-wrapper > a{
+    display: block;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.list-btn{
+    display: block;
+    width: 100px;
+    height: 35px;
+
+}
+
+.btn-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.edit-btn{
+    width: 100px !important;
+    height: 35px !important;
+}
+
+.edit-btn:first-child{
+    margin-right: 10px;
+}
+.edit-btn:last-child{
+    margin-left: 10px;
+}
+
+.list-btn > a{
+    text-decoration: none;
+    color: var(--white-color);
+}

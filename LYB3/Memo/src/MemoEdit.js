@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 const MemoEdit = ({onCreate}) => {
@@ -30,6 +31,11 @@ const MemoEdit = ({onCreate}) => {
         alert("저장 성공!");
     }
 
+    const navigate = useNavigate();
+    const goBack = () => {
+        navigate(-1);
+    }
+
 
     return (
         <div className="MemoEdit">
@@ -51,8 +57,9 @@ const MemoEdit = ({onCreate}) => {
                     <option value={"박규현"}>박규현</option>
                 </select>
             </div>
-            <div>
-                <button className='primary-btn' onClick={handleSubmit}>저장하기</button>
+            <div className='btn-wrapper'>
+                <button className='edit-btn primary-btn' onClick={goBack}>돌아가기</button>
+                <button className='edit-btn primary-btn' onClick={handleSubmit}>저장하기</button>
             </div>
         </div>
     );
