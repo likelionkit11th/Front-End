@@ -1,7 +1,7 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-const ListItem = ({title, content, member}) => {
+const ListItem = ({ title, content, member }) => {
   return (
     <div className="Item">
       <div className="info">
@@ -9,11 +9,9 @@ const ListItem = ({title, content, member}) => {
           제목 : {title} | 운영진 : {member}
         </span>
       </div>
-      <div className="content">
-        {content}
-      </div>
+      <div className="content">{content}</div>
     </div>
-  )
-}
+  );
+};
 
 export default ListItem;
