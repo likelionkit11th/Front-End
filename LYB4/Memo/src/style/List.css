@@ -1,0 +1,88 @@
+.memo-item{
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+}
+.memo-item:hover{
+    background-color: #f5f1ec;
+}
+
+.memo-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.memo-header .memo-title{
+    margin-bottom: 2px;
+}
+
+.memo-header .memo-member{
+    font-size: 12px;
+    color: #999;
+}
+
+.memo-item .memo-content{
+    text-align: left;
+}
+
+.list-wrapper{
+    height: 100vh;
+    padding: 50px 30px;
+}
+
+.memo-items{
+    height: 70vh;
+    overflow-y: scroll;
+}
+
+.list-btn-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.list-btn-wrapper > button{
+    
+}
+
+.list-btn-wrapper > a{
+    display: block;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.list-btn{
+    display: block;
+    width: 100px;
+    height: 35px;
+
+}
+
+.btn-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.edit-btn{
+    width: 100px !important;
+    height: 35px !important;
+}
+
+.edit-btn:first-child{
+    margin-right: 10px;
+}
+.edit-btn:last-child{
+    margin-left: 10px;
+}
+
+.list-btn > a{
+    text-decoration: none;
+    color: var(--white-color);
+}
