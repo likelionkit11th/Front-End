@@ -1,0 +1,70 @@
+.App {
+    text-align: center;
+}
+
+.TodayDiary {
+    border: 1px solid gray;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffebee;
+}
+
+.TodayDiary input {
+    margin-bottom: 20px;
+    width: 41rem;
+    height: 20px;
+    padding: 10px;
+}
+.TodayDiary textarea {
+    margin-bottom: 20px;
+    width: 41rem;
+    padding: 10px;
+    height: 150px;
+}
+
+.buttons {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.buttons button {
+    width: 8rem;
+    height: 11rem;
+    margin: 4px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.button1:hover {
+    background-color: green;
+}
+
+.button2:hover {
+    background-color: greenyellow;
+}
+
+.button3:hover {
+    background-color: yellow;
+}
+
+.button4:hover {
+    background-color: orange;
+}
+
+.button5:hover {
+    background-color: red;
+}
+
+.buttons img {
+    width: 5rem;
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.saveButton {
+    width: 42rem;
+    height: 3rem;
+}
