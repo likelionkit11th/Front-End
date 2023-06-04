@@ -34,5 +34,41 @@ textarea {
   width: 500px;
   padding: 10px;
   cursor: pointer;
+  text-align: center;
 }
 
+.emotionBox {
+  display: flex;
+  margin-bottom: 25px;
+  justify-content: center;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5%;
+  border-color: white;
+  max-width: 150px;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+
+  &.active1 {
+    background-color: #35fc4c;
+  }
+  &.active2 {
+    background-color: #87ff99;
+  }
+  &.active3 {
+    background-color: #fbf552;
+  }
+  &.active4 {
+    background-color: #ff8787;
+  }
+  &.active5 {
+    background-color: #ff4b4b;
+  }
+}
+
+img {
+  width: 80px;
+}
