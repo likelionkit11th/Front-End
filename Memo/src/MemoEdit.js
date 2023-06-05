@@ -30,11 +30,14 @@ const MemoEdit = ({ onCreate }) => {
   };
 
   const data = ["신남", "좋음", "보통", "나쁨", "끔찍"];
+
+  const emotionImg = [emotion1, emotion2, emotion3, emotion4, emotion5];
+
   const [btnActive, setBtnActive] = useState(false);
 
-  const toggleActive = (e) => {
+  const toggleActive = (a) => {
     setBtnActive((prev) => {
-      return !prev;
+      return a.target.value;
     });
   };
 
@@ -55,44 +58,20 @@ const MemoEdit = ({ onCreate }) => {
             <>
               <button
                 value={idx + 1}
-                className={"btn" + (btnActive ? " active" + [idx + 1] : "")}
+                className={
+                  "btn" + (idx + 1 == btnActive ? " active" + [idx + 1] : "")
+                }
                 onClick={toggleActive}
               >
-                <img src={emotion2} alt="" />
+                {emotionImg.map((emoImg, inx) => {
+                  return (
+                    <>
+                      <img src={emoImg} alt="" />
+                    </>
+                  );
+                })}
                 {item}
               </button>
-              {/* <button
-                className={"btn" + (btnActive ? " active" : "")}
-                value={idx}
-                onClick={toggleActive}
-              >
-                <img src={emotion2} alt="" />
-                좋음
-              </button>
-              <button
-                className={"btn" + (btnActive ? " active" : "")}
-                value={idx}
-                onClick={toggleActive}
-              >
-                <img src={emotion3} alt="" />
-                보통
-              </button>
-              <button
-                className={"btn" + (btnActive ? " active" : "")}
-                value={idx}
-                onClick={toggleActive}
-              >
-                <img src={emotion4} alt="" />
-                나쁨
-              </button>
-              <button
-                className={"btn" + (btnActive ? " active" : "")}
-                value={idx}
-                onClick={toggleActive}
-              >
-                <img src={emotion5} alt="" />
-                끔찍
-              </button> */}
             </>
           );
         })}
