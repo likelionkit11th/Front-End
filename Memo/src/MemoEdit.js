@@ -21,7 +21,7 @@ const MemoEdit = ({ onCreate }) => {
 
   const handleSubmit = (e) => {
     alert("저장 성공");
-    onCreate(state.title, state.content, state.emotion);
+    onCreate(state);
     setState({
       title: "",
       content: "",
@@ -33,12 +33,15 @@ const MemoEdit = ({ onCreate }) => {
 
   const emotionImg = [emotion1, emotion2, emotion3, emotion4, emotion5];
 
-  const [btnActive, setBtnActive] = useState(false);
+  const [btnActive, setBtnActive] = useState(0);
 
-  const toggleActive = (a) => {
-    setBtnActive((prev) => {
-      return a.target.value;
-    });
+  const toggleActive = (idx) => {
+    console.log(btnActive, idx);
+    setBtnActive(btnActive == idx ? 0 : idx);
+    setState({
+      ...state,
+      emotion: btnActive == idx ? 0 : idx
+    })
   };
 
   return (
@@ -55,24 +58,9 @@ const MemoEdit = ({ onCreate }) => {
       <div className="emotionBox">
         {data.map((item, idx) => {
           return (
-            <>
-              <button
-                value={idx + 1}
-                className={
-                  "btn" + (idx + 1 == btnActive ? " active" + [idx + 1] : "")
-                }
-                onClick={toggleActive}
-              >
-                {emotionImg.map((emoImg, inx) => {
-                  return (
-                    <>
-                      <img src={emoImg} alt="" />
-                    </>
-                  );
-                })}
-                {item}
+              <button className={"btn " + (idx + 1 == btnActive ? "active" + [idx + 1] : "")} onClick={()=>toggleActive(idx+1)}>
+                <img src={emotionImg[idx]} alt="" />{item}
               </button>
-            </>
           );
         })}
       </div>
