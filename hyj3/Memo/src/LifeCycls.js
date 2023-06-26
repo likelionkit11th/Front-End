@@ -1,20 +1,16 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 
 const LifeCycle = () => {
-  useEffect(()=>{},[])
-  useEffect(()=>{
-      console.log("마운트")
-      },[])
+  useEffect(() => {}, []);
+  useEffect(() => {
+    console.log("마운트");
+  }, []);
 
-  useEffect(()=>{
-      console.log("업데이트")
-      })
+  useEffect(() => {
+    console.log("업데이트");
+  });
 
-  return (
-      <div>
-
-      </div>
-  );
+  return <div></div>;
 };
 
 export default LifeCycle;

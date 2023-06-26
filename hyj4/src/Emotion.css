@@ -1,0 +1,60 @@
+.emotion {
+  background-color: rgb(217, 212, 212);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.funny:hover {
+  background-color: rgb(118 201 95);
+  cursor: pointer;
+}
+
+.funny.active {
+  background-color: rgb(118 201 95);
+}
+
+.good:hover {
+  background-color: rgb(164 215 109);
+  cursor: pointer;
+}
+
+.good.active {
+  background-color: rgb(164 215 109);
+}
+
+.normal:hover {
+  background-color: rgb(242 206 0);
+  cursor: pointer;
+}
+
+.normal.active {
+  background-color: rgb(242 206 0);
+}
+
+.bad:hover {
+  background-color: rgb(236 132 71);
+  cursor: pointer;
+}
+
+.bad.active {
+  background-color: rgb(236 132 71);
+}
+
+.terrible:hover {
+  background-color: rgb(235 86 98);
+  cursor: pointer;
+}
+
+.terrible.active {
+  background-color: rgb(235 86 98);
+}
+
+img {
+  width: 60px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 8px;
+}

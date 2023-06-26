@@ -76,7 +76,7 @@ textarea {
   padding: 10px;
 }
 
-.dark{
+.dark {
   background-color: #202124;
   color: white;
 }
@@ -85,22 +85,22 @@ textarea {
   background-color: #38393c;
 }
 
-.dark .MemoEdit input{
+.dark .MemoEdit input {
   background-color: #38393c;
   color: white;
 }
 
-.dark .MemoEdit textarea{
+.dark .MemoEdit textarea {
   background-color: #38393c;
   color: white;
 }
 
-.dark .MemoEdit select{
+.dark .MemoEdit select {
   background-color: #38393c;
   color: white;
 }
 
-.light{
+.light {
   background-color: #fefefe;
-  color: #202124,
+  color: #202124;
 }
