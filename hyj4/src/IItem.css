@@ -1,0 +1,40 @@
+#item {
+  width: 19%;
+  height: 300px;
+  border: 1px solid black;
+  margin: 8px 0;
+}
+
+#item p {
+  word-wrap: break-word;
+}
+
+.img_item {
+  border-bottom: 1px solid black;
+  padding: 8px;
+}
+
+.img_item.ifunny {
+  background-color: rgb(118 201 95);
+}
+
+.img_item.igood {
+  background-color: rgb(164 215 109);
+}
+
+.img_item.inormal {
+  background-color: rgb(242 206 0);
+}
+
+.img_item.ibad {
+  background-color: rgb(236 132 71);
+}
+
+.img_item.iterrible {
+  background-color: rgb(235 86 98);
+}
+
+.text_item {
+  height: 72%;
+  overflow-y: auto;
+}

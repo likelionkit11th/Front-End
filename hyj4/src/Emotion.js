@@ -1,9 +1,13 @@
-import React from "react";
+import "./Emotion.css";
+import EItem from "./EItem";
 
-const Emotion = ({ path }) => {
+const Emotion = ({ active, emotion, onClick }) => {
   return (
-    <div>
-      <img src={process.env.PUBLIC_URL + path} />
+    <div
+      className={["emotion", emotion[2], active].join(" ")}
+      onClick={onClick}
+    >
+      <EItem emotion={emotion} />
     </div>
   );
 };
